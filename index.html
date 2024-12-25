@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Warung Mannn</h1>
+        <h2>Program Kasir Sederhana</h2>
+        
+        <div class="menu">
+            <h3>Menu</h3>
+            <ul id="menu-list">
+                <!-- Menu akan diisi oleh JavaScript -->
+            </ul>
+        </div>
+
+        <div class="order">
+            <h3>Pesanan</h3>
+            <label for="menu-code">Kode Menu:</label>
+            <input type="text" id="menu-code" placeholder="Masukkan kode menu">
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button onclick="addOrder()">Tambah Pesanan</button>
+
+            <h4>Daftar Pesanan</h4>
+            <ul id="order-list"></ul>
+            <p><strong>Total: Rp <span id="total-price">0</span></strong></p>
+        </div>
+
+        <div class="payment">
+            <h3>Pembayaran</h3>
+            <label for="cash">Uang Tunai:</label>
+            <input type="number" id="cash" min="0" placeholder="Masukkan jumlah uang">
+            <button onclick="pay()">Bayar Tunai</button>
+            <button onclick="showQRIS()">Bayar dengan QRIS</button>
+            <p id="change-message"></p>
+        </div><!-- Area untuk menampilkan QRIS saat melakukan pembayaran -->
+<div id="qris-area" style="display: none;">
+    <h3>Pembayaran QRIS</h3>
+    <p>Silakan scan QR Code di bawah ini untuk membayar:</p>
+    <img id="qris-code" src="pin.png" alt="QRIS Code" style="width: 270px; height: auto;">
+    <p><strong>Total Pembayaran: Rp <span id="qris-total"></span></strong></p>
+    
+    <!-- Tombol Lanjut untuk mencetak struk -->
+    <button onclick="lanjutKePrint()">Lanjut</button>
+    <!-- Tombol Kembali -->
+    <button onclick="hideQRIS()">Kembali</button>
+</div>
+
+<!-- Area untuk mencetak struk yang termasuk QRIS -->
+<div id="print-area" style="display: none;">
+    <!-- Ini adalah tempat di mana struk dan QRIS akan digabungkan untuk dicetak -->
+</div>
+
+<button id="print-btn" style="display: none;" onclick="printStruk()">Cetak Struk</button>
+
+        
+
+        <div id="print-area" style="display: none;">
+            <!-- Area struk untuk dicetak -->
+        </div>
+
+        <button id="print-btn" style="display: none;" onclick="printStruk()">Cetak Struk</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

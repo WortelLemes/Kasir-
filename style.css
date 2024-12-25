@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+.menu, .order, .payment {
+    margin-top: 20px;
+}
+
+h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+p1 {
+   border-bottom: 2px solid #ddd;
+   text-align: center;
+   color: ;
+   font-size: 1rem;
+}
+  
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input, button {
+    width: 93%;
+    padding: 15px;
+    margin: 5px 0 15px;
+    border: 1.9px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 101%;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    border-bottom: 1.9px solid #ddd;
+}
+
+/* Gaya untuk area QRIS */
+#qris-area {
+    border: 1px solid #007bff;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#qris-area img {
+    margin: 50px 0;
+}
+
+#print-area {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#print-area img {
+    width: 170px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#print-area ul {
+    list-style: none;
+    padding: 0;
+}
+
+#print-area ul li {
+    border-bottom: 2px solid #ddd;
+    padding: 5px 0;
+    text-align: left;
+}
+
+#print-area p {
+    margin: 5px 0;
+    text-align: right;
+}
